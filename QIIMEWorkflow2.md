@@ -38,6 +38,6 @@ jackknifed_beta_diversity.py -i Combined_otus/otu_table.biom -t Combined_otus/re
 
 the flag -f is only needed to overwrite an existing file
 
-*If you want to add species level info run:
+* If you want to add species level info run:
 summarize_taxa.py -i Combined_otus2/otu_table.biom -o combined_wf_taxa_summary3 -m Combined_map_1.txt -a -L 7
 
