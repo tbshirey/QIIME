@@ -4,7 +4,7 @@
 * Create a separate mapping file for each sample (see example mapping file)
 
 * Download the .fastq sequence file and convert your .fastq file into seperate .fasta and .qual files by using this script
-convert_fastqual_fastq.py -f Filename.fastq -c fastq_to_fastqual
+convert_fastaqual_fastq.py -f Filename.fastq -c fastq_to_fastaqual
 
 * For each sample generate a separate split library file from the .fna and .qual files generated in the previous step
 split_libraries.py -m MappingFile.txt -f SampleFilename.fna -q SampleFilename.qual -l 150 -L 350 -z truncate_only -o split_library_SampleFilename_output
