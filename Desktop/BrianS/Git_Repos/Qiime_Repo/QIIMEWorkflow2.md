@@ -9,7 +9,6 @@ convert_fastaqual_fastq.py -f Filename.fastq -c fastq_to_fastaqual
 * For each sample generate a separate split library file from the .fna and .qual files generated in the previous step
 split_libraries.py -m MappingFile.txt -f SampleFilename.fna -q SampleFilename.qual -l 150 -L 350 -z truncate_only -o split_library_SampleFilename_output
 
-
 * Concatenate all the split library files into one fasta file.  Make sure you enter a space between each .fna filename
 cat split_library_Filename_output/seqs.fna split_library_Filename2_output/seqs.fna > Combined_seqs.fna
 
