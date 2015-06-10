@@ -49,4 +49,4 @@
 
    $ summarize_taxa.py -i Combined_otus2/otu_table.biom -o combined_wf_taxa_summary3 -m Combined_map_1.txt -a -L 7
 
-### The workflow above is one example of performing metagenomic analysis on Ion Torrent sequence data using QIIME. For additional scripts, parameters, etc. please refer to the QIIME website. QIIME can be accessed at [QIIME](http://qiime.org/index.html). 
+##### The workflow above is one example of performing metagenomic analysis on Ion Torrent sequence data using QIIME. For additional scripts, parameters, etc. please refer to the QIIME website. QIIME can be accessed at [QIIME](http://qiime.org/index.html). 
