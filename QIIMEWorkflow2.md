@@ -5,15 +5,15 @@
 
 2. Download the .fastq sequence file and convert your .fastq file into seperate .fasta and .qual files by using this script:
 
-   $ convert_fastaqual_fastq.py -f <filename.fastq> -c fastq_to_fastaqual
+   $ convert_fastaqual_fastq.py -f filename.fastq -c fastq_to_fastaqual
 
 3. For each sample generate a separate split library file from the .fna and .qual files generated in the previous step:
 
-   $ split_libraries.py -m <mappingfile.txt> -f <filename.fna> -q <filename.qual> -l 150 -L 350 -z truncate_only -o split_library_<filename>_output
+   $ split_libraries.py -m mappingfile.txt -f filename.fna -q filename.qual -l 150 -L 350 -z truncate_only -o split_library_filename_output
 
-4. Concatenate all the split library files into one fasta file.  Make sure you enter a space between each .fna filename:
+4. Concatenate all the split library files into one fasta file.  Make sure you enter a single space between each .fna filename:
 
-   $ cat split_library_<filename>_output/seqs.fna split_library_<filename2>_output/seqs.fna > Combined_seqs.fna
+   $ cat split_library_filename_output/seqs.fna split_library_filename2_output/seqs.fna > Combined_seqs.fna
 
 5. Pick OTUs using the standard method on your combined seqs file:
 
